@@ -20,7 +20,7 @@ export class App extends Component {
     if (total === 0) {
       return total;
     }
-    return Math.round((this.state.good / this.countTotalFeedback()) * 100);
+    return Math.round((this.state.good / total) * 100);
   };
 
   onFeedback = name => {
